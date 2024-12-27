@@ -15,6 +15,10 @@ the Rust borrow checker would approve of.
    ./build.sh
    ```
 
+## Issues
+1. Because of the way we find unoccupied slots available for new nodes, the
+   current implementation of `ll_add_first` is O(n) instead of O(1). 
+
 ## License
 
 [MIT](LICENSE) © [gmrowe](https://github.com/gmrowe).
